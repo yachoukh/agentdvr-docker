@@ -1,7 +1,9 @@
-version: '2'
+version: '2.4'
 services:
   agent:
     build: .
+    container_name: agentdvr
+    network_mode: host
     ports:
       - "8091:8090"
       - "8091:8090/udp"
